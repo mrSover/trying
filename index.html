@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatpickr Example</title>
+  <!-- Flatpickr CSS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <div class="form__container">
+
+    <div class="pick-up-place">
+      <p class="data-picker__title">Pick up & return</p>
+      <div style="display: flex; gap: 20px;">
+        <select class="pick-up-place__select" name="" id="pickupSelect">
+          <option value disabled selected hidden>🔎︎</option>
+          <option value="larnaca-airport">Larnaca airport</option>
+          <option value="larnaca-office">Larnaca office</option>
+        </select>
+
+        <input type="text" class="location-input" id="locationInput" size="6" readonly
+          placeholder="+ Different location">
+
+      </div>
+
+    </div>
+    <div class="data-pickerr">
+      <div class="picker-wrapper">
+        <div class="data-picker__container">
+          <p class="data-picker__title">Pick-up date</p>
+          <div class="data-picker__wrapper">
+            <div id="calendarContainer">
+              <input type="text" id="startDate" name="daterange" placeholder="mm/dd/yy" />
+            </div>
+
+            <div class="time-picker-container1">
+              <input type="text" id="pickup-time1" value="" placeholder="hh:mm" readonly class="pickup-time-input1"
+                required>
+              <div class="dropdown1">
+                <div class="dropdown-content">
+                  <div class="time-grid">
+                    <div class="time-slot1" data-time="00:00">00:00</div>
+                    <div class="time-slot1" data-time="00:15">00:15</div>
+                    <div class="time-slot1" data-time="00:30">00:30</div>
+                    <div class="time-slot1" data-time="00:45">00:45</div>
+                    <div class="time-slot1" data-time="01:00">01:00</div>
+                    <div class="time-slot1" data-time="01:15">01:15</div>
+                    <div class="time-slot1" data-time="01:30">01:30</div>
+                    <div class="time-slot1" data-time="01:45">01:45</div>
+                    <div class="time-slot1" data-time="02:00">02:00</div>
+                    <div class="time-slot1" data-time="02:15">02:15</div>
+                    <div class="time-slot1" data-time="02:30">02:30</div>
+                    <div class="time-slot1" data-time="02:45">02:45</div>
+                    <div class="time-slot1" data-time="03:00">03:00</div>
+                    <div class="time-slot1" data-time="03:15">03:15</div>
+                    <div class="time-slot1" data-time="03:30">03:30</div>
+                    <div class="time-slot1" data-time="03:45">03:45</div>
+                    <div class="time-slot1" data-time="04:00">04:00</div>
+                    <div class="time-slot1" data-time="04:15">04:15</div>
+                    <div class="time-slot1" data-time="04:30">04:30</div>
+                    <div class="time-slot1" data-time="04:45">04:45</div>
+                    <div class="time-slot1" data-time="05:00">05:00</div>
+                    <div class="time-slot1" data-time="05:15">05:15</div>
+                    <div class="time-slot1" data-time="05:30">05:30</div>
+                    <div class="time-slot1" data-time="05:45">05:45</div>
+                    <div class="time-slot1" data-time="06:00">06:00</div>
+                    <div class="time-slot1" data-time="06:15">06:15</div>
+                    <div class="time-slot1" data-time="06:30">06:30</div>
+                    <div class="time-slot1" data-time="06:45">06:45</div>
+                    <div class="time-slot1" data-time="07:00">07:00</div>
+                    <div class="time-slot1" data-time="07:15">07:15</div>
+                    <div class="time-slot1" data-time="07:30">07:30</div>
+                    <div class="time-slot1" data-time="07:45">07:45</div>
+                    <div class="time-slot1" data-time="08:00">08:00</div>
+                    <div class="time-slot1" data-time="08:15">08:15</div>
+                    <div class="time-slot1" data-time="08:30">08:30</div>
+                    <div class="time-slot1" data-time="08:45">08:45</div>
+                    <div class="time-slot1" data-time="09:00">09:00</div>
+                    <div class="time-slot1" data-time="09:15">09:15</div>
+                    <div class="time-slot1" data-time="09:30">09:30</div>
+                    <div class="time-slot1" data-time="09:45">09:45</div>
+                    <div class="time-slot1" data-time="10:00">10:00</div>
+                    <div class="time-slot1" data-time="10:15">10:15</div>
+                    <div class="time-slot1" data-time="10:30">10:30</div>
+                    <div class="time-slot1" data-time="10:45">10:45</div>
+                    <div class="time-slot1" data-time="11:00">11:00</div>
+                    <div class="time-slot1" data-time="11:15">11:15</div>
+                    <div class="time-slot1" data-time="11:30">11:30</div>
+                    <div class="time-slot1" data-time="11:45">11:45</div>
+                    <div class="time-slot1" data-time="12:00">12:00</div>
+                    <div class="time-slot1" data-time="12:15">12:15</div>
+                    <div class="time-slot1" data-time="12:30">12:30</div>
+                    <div class="time-slot1" data-time="12:45">12:45</div>
+                    <div class="time-slot1" data-time="13:00">13:00</div>
+                    <div class="time-slot1" data-time="13:15">13:15</div>
+                    <div class="time-slot1" data-time="13:30">13:30</div>
+                    <div class="time-slot1" data-time="13:45">13:45</div>
+                    <div class="time-slot1" data-time="14:00">14:00</div>
+                    <div class="time-slot1" data-time="14:15">14:15</div>
+                    <div class="time-slot1" data-time="14:30">14:30</div>
+                    <div class="time-slot1" data-time="14:45">14:45</div>
+                    <div class="time-slot1" data-time="15:00">15:00</div>
+                    <div class="time-slot1" data-time="15:15">15:15</div>
+                    <div class="time-slot1" data-time="15:30">15:30</div>
+                    <div class="time-slot1" data-time="15:45">15:45</div>
+                    <div class="time-slot1" data-time="16:00">16:00</div>
+                    <div class="time-slot1" data-time="16:15">16:15</div>
+                    <div class="time-slot1" data-time="16:30">16:30</div>
+                    <div class="time-slot1" data-time="16:45">16:45</div>
+                    <div class="time-slot1" data-time="17:00">17:00</div>
+                    <div class="time-slot1" data-time="17:15">17:15</div>
+                    <div class="time-slot1" data-time="17:30">17:30</div>
+                    <div class="time-slot1" data-time="17:45">17:45</div>
+                    <div class="time-slot1" data-time="18:00">18:00</div>
+                    <div class="time-slot1" data-time="18:15">18:15</div>
+                    <div class="time-slot1" data-time="18:30">18:30</div>
+                    <div class="time-slot1" data-time="18:45">18:45</div>
+                    <div class="time-slot1" data-time="19:00">19:00</div>
+                    <div class="time-slot1" data-time="19:15">19:15</div>
+                    <div class="time-slot1" data-time="19:30">19:30</div>
+                    <div class="time-slot1" data-time="19:45">19:45</div>
+                    <div class="time-slot1" data-time="20:00">20:00</div>
+                    <div class="time-slot1" data-time="20:15">20:15</div>
+                    <div class="time-slot1" data-time="20:30">20:30</div>
+                    <div class="time-slot1" data-time="20:45">20:45</div>
+                    <div class="time-slot1" data-time="21:00">21:00</div>
+                    <div class="time-slot1" data-time="21:15">21:15</div>
+                    <div class="time-slot1" data-time="21:30">21:30</div>
+                    <div class="time-slot1" data-time="21:45">21:45</div>
+                    <div class="time-slot1" data-time="22:00">22:00</div>
+                    <div class="time-slot1" data-time="22:15">22:15</div>
+                    <div class="time-slot1" data-time="22:30">22:30</div>
+                    <div class="time-slot1" data-time="22:45">22:45</div>
+                    <div class="time-slot1" data-time="23:00">23:00</div>
+                    <div class="time-slot1" data-time="23:15">23:15</div>
+                    <div class="time-slot1" data-time="23:30">23:30</div>
+                    <div class="time-slot1" data-time="23:45">23:45</div>
+
+
+                    <!-- Add more time slots as needed -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="data-picker__container">
+          <p class="data-picker__title">Return date</p>
+          <div class="data-picker__wrapper">
+            <div id="calendarContainer">
+              <input type="text" id="endDate" name="daterange" required placeholder="mm/dd/yy" />
+            </div>
+            <div class="time-picker-container2">
+              <input type="text" id="pickup-time2" value="" readonly placeholder="hh:mm" class="pickup-time-input2"
+                required>
+              <div class="dropdown2">
+                <div class="dropdown-content">
+                  <div class="time-grid">
+                    <div class="time-slot2" data-time="00:00">00:00</div>
+                    <div class="time-slot2" data-time="00:15">00:15</div>
+                    <div class="time-slot2" data-time="00:30">00:30</div>
+                    <div class="time-slot2" data-time="00:45">00:45</div>
+                    <div class="time-slot2" data-time="01:00">01:00</div>
+                    <div class="time-slot2" data-time="01:15">01:15</div>
+                    <div class="time-slot2" data-time="01:30">01:30</div>
+                    <div class="time-slot2" data-time="01:45">01:45</div>
+                    <div class="time-slot2" data-time="02:00">02:00</div>
+                    <div class="time-slot2" data-time="02:15">02:15</div>
+                    <div class="time-slot2" data-time="02:30">02:30</div>
+                    <div class="time-slot2" data-time="02:45">02:45</div>
+                    <div class="time-slot2" data-time="03:00">03:00</div>
+                    <div class="time-slot2" data-time="03:15">03:15</div>
+                    <div class="time-slot2" data-time="03:30">03:30</div>
+                    <div class="time-slot2" data-time="03:45">03:45</div>
+                    <div class="time-slot2" data-time="04:00">04:00</div>
+                    <div class="time-slot2" data-time="04:15">04:15</div>
+                    <div class="time-slot2" data-time="04:30">04:30</div>
+                    <div class="time-slot2" data-time="04:45">04:45</div>
+                    <div class="time-slot2" data-time="05:00">05:00</div>
+                    <div class="time-slot2" data-time="05:15">05:15</div>
+                    <div class="time-slot2" data-time="05:30">05:30</div>
+                    <div class="time-slot2" data-time="05:45">05:45</div>
+                    <div class="time-slot2" data-time="06:00">06:00</div>
+                    <div class="time-slot2" data-time="06:15">06:15</div>
+                    <div class="time-slot2" data-time="06:30">06:30</div>
+                    <div class="time-slot2" data-time="06:45">06:45</div>
+                    <div class="time-slot2" data-time="07:00">07:00</div>
+                    <div class="time-slot2" data-time="07:15">07:15</div>
+                    <div class="time-slot2" data-time="07:30">07:30</div>
+                    <div class="time-slot2" data-time="07:45">07:45</div>
+                    <div class="time-slot2" data-time="08:00">08:00</div>
+                    <div class="time-slot2" data-time="08:15">08:15</div>
+                    <div class="time-slot2" data-time="08:30">08:30</div>
+                    <div class="time-slot2" data-time="08:45">08:45</div>
+                    <div class="time-slot2" data-time="09:00">09:00</div>
+                    <div class="time-slot2" data-time="09:15">09:15</div>
+                    <div class="time-slot2" data-time="09:30">09:30</div>
+                    <div class="time-slot2" data-time="09:45">09:45</div>
+                    <div class="time-slot2" data-time="10:00">10:00</div>
+                    <div class="time-slot2" data-time="10:15">10:15</div>
+                    <div class="time-slot2" data-time="10:30">10:30</div>
+                    <div class="time-slot2" data-time="10:45">10:45</div>
+                    <div class="time-slot2" data-time="11:00">11:00</div>
+                    <div class="time-slot2" data-time="11:15">11:15</div>
+                    <div class="time-slot2" data-time="11:30">11:30</div>
+                    <div class="time-slot2" data-time="11:45">11:45</div>
+                    <div class="time-slot2" data-time="12:00">12:00</div>
+                    <div class="time-slot2" data-time="12:15">12:15</div>
+                    <div class="time-slot2" data-time="12:30">12:30</div>
+                    <div class="time-slot2" data-time="12:45">12:45</div>
+                    <div class="time-slot2" data-time="13:00">13:00</div>
+                    <div class="time-slot2" data-time="13:15">13:15</div>
+                    <div class="time-slot2" data-time="13:30">13:30</div>
+                    <div class="time-slot2" data-time="13:45">13:45</div>
+                    <div class="time-slot2" data-time="14:00">14:00</div>
+                    <div class="time-slot2" data-time="14:15">14:15</div>
+                    <div class="time-slot2" data-time="14:30">14:30</div>
+                    <div class="time-slot2" data-time="14:45">14:45</div>
+                    <div class="time-slot2" data-time="15:00">15:00</div>
+                    <div class="time-slot2" data-time="15:15">15:15</div>
+                    <div class="time-slot2" data-time="15:30">15:30</div>
+                    <div class="time-slot2" data-time="15:45">15:45</div>
+                    <div class="time-slot2" data-time="16:00">16:00</div>
+                    <div class="time-slot2" data-time="16:15">16:15</div>
+                    <div class="time-slot2" data-time="16:30">16:30</div>
+                    <div class="time-slot2" data-time="16:45">16:45</div>
+                    <div class="time-slot2" data-time="17:00">17:00</div>
+                    <div class="time-slot2" data-time="17:15">17:15</div>
+                    <div class="time-slot2" data-time="17:30">17:30</div>
+                    <div class="time-slot2" data-time="17:45">17:45</div>
+                    <div class="time-slot2" data-time="18:00">18:00</div>
+                    <div class="time-slot2" data-time="18:15">18:15</div>
+                    <div class="time-slot2" data-time="18:30">18:30</div>
+                    <div class="time-slot2" data-time="18:45">18:45</div>
+                    <div class="time-slot2" data-time="19:00">19:00</div>
+                    <div class="time-slot2" data-time="19:15">19:15</div>
+                    <div class="time-slot2" data-time="19:30">19:30</div>
+                    <div class="time-slot2" data-time="19:45">19:45</div>
+                    <div class="time-slot2" data-time="20:00">20:00</div>
+                    <div class="time-slot2" data-time="20:15">20:15</div>
+                    <div class="time-slot2" data-time="20:30">20:30</div>
+                    <div class="time-slot2" data-time="20:45">20:45</div>
+                    <div class="time-slot2" data-time="21:00">21:00</div>
+                    <div class="time-slot2" data-time="21:15">21:15</div>
+                    <div class="time-slot2" data-time="21:30">21:30</div>
+                    <div class="time-slot2" data-time="21:45">21:45</div>
+                    <div class="time-slot2" data-time="22:00">22:00</div>
+                    <div class="time-slot2" data-time="22:15">22:15</div>
+                    <div class="time-slot2" data-time="22:30">22:30</div>
+                    <div class="time-slot2" data-time="22:45">22:45</div>
+                    <div class="time-slot2" data-time="23:00">23:00</div>
+                    <div class="time-slot2" data-time="23:15">23:15</div>
+                    <div class="time-slot2" data-time="23:30">23:30</div>
+                    <div class="time-slot2" data-time="23:45">23:45</div>
+                    <!-- Add more time slots as needed -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="data-picker__container">
+        <p class="data-picker__title" style="color: transparent;">-</p>
+        <button type="submit" class="search-button" onclick="callTrueSubmit()">Search</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- mediaquery -->
+  <style>
+    .picker-wrapper {
+      flex: 1 0 70%;
+      display: flex;
+      gap: 15px;
+      font-size: 16px !important;
+    }
+
+    #calendarContainer {
+      max-height: 80vh;
+      /* Limit the height to 80% of viewport height */
+      overflow-y: auto;
+      /* Enable vertical scrolling */
+      overflow-x: hidden;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+
+    @media (max-width: 500px) {
+      .flatpickr-calendar.rangeMode.animate.multiMonth.open.arrowTop.arrowLeft.rightMost{
+        position: relative;
+        transform: translate(0, -250px);
+        transition: 0.6s;
+      }
+      body{
+        overflow-x: hidden;
+        
+      }
+      .location-input::placeholder {
+        font-size: 3vw;
+      }
+
+      .flatpickr-days {
+        flex-direction: column;
+        width: 100% !important;
+      }
+
+      .monthBlock {
+        text-align: center;
+        width: 100%;
+      }
+
+      .flatpickr-innerContainer {
+        justify-content: center;
+      }
+
+      .flatpickr-rContainer {
+
+        overflow-x: hidden;
+      }
+
+      .flatpickr-calendar.open {
+        overflow-x: hidden;
+        width: 100% !important;
+        max-height: none;
+      }
+
+      .flatpickr-calendar {
+        min-height: 100%;
+      }
+
+      .flatpickr-weekdaycontainer:nth-child(n+2) {
+        display: none;
+        visibility: collapse;
+      }
+
+      .flatpickr-months {
+        display: none;
+      }
+
+      .data-pickerr {
+        gap: 0px !important;
+      }
+    }
+
+    @media (max-width: 993px) {
+      .data-picker__wrapper {
+        flex-direction: column;
+      }
+
+      .picker-wrapper {
+        flex: 1 1 auto;
+      }
+
+
+      #startDate {
+        width: 100%;
+      }
+
+      .data-pickerr {
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+      }
+
+      .data-picker__container {
+        flex: 1 1 auto;
+      }
+
+      .flatpickr-input {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+
+      .pickup-time-input2,
+      .pickup-time-input1 {
+        border-bottom-right-radius: 8px !important;
+        border-bottom-left-radius: 8px !important;
+        border-top-right-radius: 0px !important;
+      }
+    }
+
+    @media (max-width: 1824px) {
+      .form__container {
+        flex-wrap: wrap;
+      }
+
+      .data-pickerr {
+        flex-wrap: wrap;
+      }
+
+      .picker-wrapper {
+        flex: 1 0 70%
+      }
+
+    }
+  </style>
+  <style>
+    #startDate,
+    #endDate {
+
+      padding: 10px 5px;
+      box-sizing: border-box;
+      box-shadow: none;
+      outline: none;
+      border: 1px solid rgb(188, 186, 186);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .data-pickerr input {
+      font-size: 16px;
+    }
+
+    #startDate:focus,
+    #endDate:focus {
+      outline: none;
+      border: 3px solid orange;
+      padding: 9px 4.5px;
+      box-shadow: none;
+    }
+
+    .numInput.cur-year {
+      font-weight: bold !important;
+    }
+
+    .elementor-element.elementor-element-ba4df2d.e-con-full.e-flex.e-con.e-parent.e-lazyloaded {
+      display: none;
+      ;
+    }
+
+
+    .flatpickr-day.selected,
+    .flatpickr-day.startRange,
+    .flatpickr-day.endRange,
+    .flatpickr-day.selected.inRange,
+    .flatpickr-day.startRange.inRange,
+    .flatpickr-day.endRange.inRange,
+    .flatpickr-day.selected.prevMonthDay,
+    .flatpickr-day.startRange.prevMonthDay,
+    .flatpickr-day.endRange.prevMonthDay,
+    .flatpickr-day.selected.nextMonthDay,
+    .flatpickr-day.startRange.nextMonthDay,
+    .flatpickr-day.endRange.nextMonthDay {
+      background: #777474;
+      border: none;
+      font-weight: 500;
+    }
+
+
+    .today {
+      border: none;
+      color: #ff8000;
+    }
+  </style>
+  <style>
+    /* styles.css */
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .location-input {
+      outline: none;
+      flex: 1 1 auto;
+      border: none;
+    }
+
+
+    .flatpickr-input {
+      width: 100%;
+    }
+
+    .data-pickerr {
+      display: flex;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .data-picker__container {
+      flex: 1 1 45%;
+    }
+
+    .form__container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      border: 1px solid #cfcfd5;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .pick-up-place {
+      flex: 1 0 50%;
+      min-width: 150px;
+      width: 100%;
+    }
+
+    .search-button {
+      background: rgb(255, 102, 0);
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .data-picker__title {
+      display: block;
+      margin: 0;
+      font-size: 0.7rem;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .data-picker__wrapper {
+      display: flex;
+    }
+
+    .time-picker-container1,
+    .time-picker-container2 {
+      box-sizing: border-box;
+      display: inline-block;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+
+    .pick-up-place__select {
+      position: relative;
+      appearance: none;
+      width: 100%;
+      padding: 10px 5px;
+      outline: none;
+      border-radius: 0;
+      border: 1px solid rgb(188, 186, 186);
+      border-radius: 8px;
+      box-shadow: none;
+      box-sizing: border-box;
+      background: none;
+      flex: 1 0 50%;
+    }
+
+
+
+
+    .pickup-time-input1,
+    .pickup-time-input2 {
+      padding: 10px 5px;
+      outline: none;
+      border: 1px solid rgb(188, 186, 186);
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      box-shadow: none;
+      box-sizing: border-box;
+      min-height: 100%;
+      width: 100%;
+    }
+
+    .pick-up-place__select:focus,
+    .pickup-time-input1:focus {
+      border: 3px solid rgb(255, 152, 67);
+      box-sizing: border-box;
+      padding: 9px 4.5px;
+    }
+
+    .pickup-time-input2:focus {
+      border: 3px solid rgb(255, 152, 67);
+      box-sizing: border-box;
+      padding: 9px 4.5px;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+
+
+
+    /* .time-picker {
+    } */
+
+    .time-picker input[type="text"] {
+      width: 100%;
+      cursor: pointer;
+    }
+
+
+    .dropdown1,
+    .dropdown2 {
+      font-size: 12px;
+      position: absolute;
+      top: 50px;
+      right: 50%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 1;
+      transform: translate(50%, 0);
+    }
+
+    .dropdown-content {
+      padding: 10px;
+      max-height: 50vh;
+      overflow-y: auto;
+    }
+
+    .time-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding-right: 20px;
+      /* Add padding to create space for the scrollbar */
+      box-sizing: content-box;
+      /* Ensure padding is outside the scrollbar */
+    }
+
+    .time-slot1,
+    .time-slot2 {
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 13px;
+      white-space: nowrap;
+      background: #f7f6f6;
+    }
+
+    .time-slot:hover,
+    .time-slot.selected {
+      background-color: #f0f1f3;
+
+    }
+  </style>
+  <!-- Flatpickr JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- Calendar -->
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      function getShowMonths() {
+        if (window.innerWidth <= 500) { // Phone width threshold
+          return 100;
+        } else if (window.innerWidth <= 800) { // Tablet and desktop
+          return 2;
+        }
+        return 3
+      }
+      function addHorizontalMonthForStart() {
+        console.log(document.querySelector(".flatpickr-calendar.open").querySelector(".monthBlock"))
+        if (document.querySelector(".flatpickr-calendar.open").querySelector(".monthBlock") || window.innerWidth > 500) return;
+        const parentNode = document.querySelectorAll(".flatpickr-days")[0]
+        parentNode.querySelectorAll(".dayContainer").forEach(item => {
+          const monthBlock = document.createElement("div");
+          monthBlock.className = "monthBlock";
+          const month = document.createTextNode(item.querySelectorAll(".flatpickr-day")[10].getAttribute("aria-label").split(" ")[0])
+          monthBlock.appendChild(month)
+          parentNode.insertBefore(monthBlock, item)
+        })
+      }
+      function addHorizontalMonthForEnd() {
+        console.log(document.querySelector(".flatpickr-calendar.open").querySelector(".monthBlock"))
+        if (document.querySelector(".flatpickr-calendar.open").querySelector(".monthBlock") || window.innerWidth > 500) return;
+        const parentNode = document.querySelectorAll(".flatpickr-days")[1]
+        parentNode.querySelectorAll(".dayContainer").forEach(item => {
+          const monthBlock = document.createElement("div");
+          monthBlock.className = "monthBlock";
+          const month = document.createTextNode(item.querySelectorAll(".flatpickr-day")[10].getAttribute("aria-label").split(" ")[0])
+          monthBlock.appendChild(month)
+          parentNode.insertBefore(monthBlock, item)
+        })
+      }
+      let dateString = "";
+      function getMinDate(){
+        // Original date string
+      let dateString = "06/07/2024";
+
+      // Convert the date string to a Date object
+      let parts = dateString.split('/');
+      let date = new Date(parts[2], parts[0] - 1, parts[1]);
+
+      // Decrement the day by 1
+      date.setDate(date.getDate() - 1);
+
+      // Format the date back to mm.dd.yyyy
+      let newDateString = (date.getMonth() + 1).toString().padStart(2, '0') + '.' +
+                    date.getDate().toString().padStart(2, '0') + '.' +
+                    date.getFullYear();
+      return newDateString
+      }
+
+      
+      function getDefaultDate() {
+        const today = new Date();
+        // Визначення завтрашньої дати
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+        
+        // Визначення дати через 4 дні після завтрашнього дня
+        const fourDaysAfterTomorrow = new Date(tomorrow);
+        fourDaysAfterTomorrow.setDate(tomorrow.getDate() + 4);
+
+        return [tomorrow, fourDaysAfterTomorrow];
+      }
+      function formatDates(dateStr){
+        document.getElementById('startDate').value = dateStr.split(" to ")[0];
+        document.getElementById('startDate').setAttribute("value", dateStr.split(" to ")[0])
+        document.getElementById('endDate').value = dateStr.split(" to ")[1] || "";
+        document.getElementById('endDate').setAttribute("value", dateStr.split(" to ")[1] || "");
+      }
+      function initializeFlatpickr() {
+        const showMonths = getShowMonths();
+        flatpickr("#startDate", {
+          minDate: "today",
+          defaultDate: getDefaultDate(),
+          dateFormat: "m/d/Y",
+          mode: "range",
+          showMonths: showMonths,
+          // Показує три місяці одночасно
+          onOpen: () => {
+            addHorizontalMonthForStart()
+          },
+
+          onDayCreate: function (dObj, dStr, fp, dayElem) {
+            let current = new Date();
+            if (dayElem.dateObj < current.setDate(current.getDate() - 1)) {
+              dayElem.style.color = "lightgray";
+              dayElem.style.fontWeight = "100";
+            }
+          },
+          onReady: function(selectedDates, dateStr, instance){
+              formatDates(dateStr)
+              dateString = dateStr;
+          },
+          onChange: function (selectedDates, dateStr, instance) {
+            if (selectedDates.length > 0) {
+              formatDates(dateStr)
+              dateString = dateStr;
+            }
+            // if (selectedDates.length) {
+            //   // console.log(1)
+            //   // dateString = `${dateString.split(" to ")[0]} to ${document.getElementById('endDate').value}`
+            //   // console.log(dateString)
+            //   // document.getElementById('startDate').value = dateString.split(" to ")[0] || "";
+            //   // document.getElementById('startDate').setAttribute("value", dateString.split(" to ")[0] || "");
+            //   // dateStr = dateString;
+
+            //   // // // const [month, day, year] = dateString.split(" to ")[0].split('/').map(Number);
+            //   // // // const date = new Date(year, month - 1, day);
+            //   // // // selectedDates.unshift(date)
+            //   // // console.log(date)
+            //   // console.log(selectedDates)
+            //   // console.log(dateStr)
+            //   // instance.set("defaultDate", dateStr)
+
+            //   instance.close()
+              
+
+            //   return selectedDates
+            // }
+          }
+        });
+        flatpickr("#endDate", {
+          dateFormat: "m/d/Y",
+          mode: "range",
+          minDate: getMinDate(),
+          defaultDate: getDefaultDate(),
+          showMonths: showMonths,
+          onOpen: () => {
+            addHorizontalMonthForEnd()
+            console.log(this.defaultDate)
+
+          }, // Показує три місяці одночасно
+          onClose: ()=>{
+            document.getElementById('endDate').value = dateString.split(" to ")[1] || "";
+            document.getElementById('endDate').setAttribute("value", dateString.split(" to ")[1] || "");
+          },
+          onDayCreate: function (dObj, dStr, fp, dayElem) {
+            let current = new Date();
+            if (dayElem.dateObj < current.setDate(current.getDate() - 1)) {
+              dayElem.style.color = "lightgray";
+            }
+          },
+          onReady: function(selectedDates, dateStr, instance){
+            formatDates(dateStr)
+          },
+          onChange: function (selectedDates, dateStr, instance) {
+            if (selectedDates.length) {
+              console.log(1)
+              dateString = `${dateString.split(" to ")[0]} to ${document.getElementById('endDate').value}`
+              console.log(dateString)
+              document.getElementById('endDate').value = dateString.split(" to ")[1] || "";
+              document.getElementById('endDate').setAttribute("value", dateString.split(" to ")[1] || "");
+              dateStr = dateString;
+
+              const [month, day, year] = dateString.split(" to ")[0].split('/').map(Number);
+              const date = new Date(year, month - 1, day);
+              selectedDates.unshift(date)
+              console.log(date)
+              console.log(selectedDates)
+              console.log(dateStr)
+              instance.set("defaultDate", dateStr)
+              instance.close()
+              
+
+              return selectedDates
+            }
+          }
+        });
+      }
+      initializeFlatpickr();
+      window.addEventListener('resize', function () {
+        // Re-initialize flatpickr on window resize
+        flatpickr("#startDate").destroy();
+        flatpickr("#endDate").destroy();
+        initializeFlatpickr();
+      });
+    });
+  </script>
+
+  <script>
+    const formSubmitButton = document.querySelector(".btn.vrcsearch.vrc-pref-color-btn");
+    const placePickerSelect = document.querySelector(".pick-up-place__select");
+
+    const place = document.getElementsByName("place")[0]
+    const returnplace = document.getElementsByName("returnplace")[0]
+
+
+    const pickupDate = document.getElementsByName("pickupdate")[0]
+    const releaseDate = document.getElementsByName("releasedate")[0]
+
+    function callTrueSubmit() {
+      const pickupmELem = document.getElementById("vrcmodselpm").children[0]
+      const pickuphELem = document.getElementById("vrcmodselph").children[0]
+      const releasemELem = document.getElementById("vrcmodseldm").children[0]
+      const releasehELem = document.getElementById("vrcmodseldh").children[0]
+      console.log(pickuphELem, pickupmELem, releasehELem, releasemELem)
+
+
+      const selectedPlace = placePickerSelect.selectedIndex;
+      const pickUpDateValue = document.getElementById("startDate").getAttribute("value")
+      const endDateValue = document.getElementById("endDate").getAttribute("value")
+      const pickUpTime = document.getElementById("pickup-time1").value.split(":")
+      const endTime = document.getElementById("pickup-time2").value.split(":")
+
+
+      place.selectedIndex = selectedPlace - 1;
+      returnplace.selectedIndex = selectedPlace - 1;
+      pickupDate.value = pickUpDateValue;
+      releaseDate.value = endDateValue;
+
+      pickuphELem.selectedIndex = +pickUpTime[0]
+      pickupmELem.selectedIndex = +pickUpTime[1] == 0 ? 0 : +pickUpTime[1] / 15
+      releasehELem.selectedIndex = +endTime[0]
+      releasemELem.selectedIndex = +endTime[1] == 0 ? 0 : +endTime[1] / 15
+
+
+      console.log(selectedPlace, pickUpDateValue, endDateValue, pickUpTime, endTime, pickuphELem, releasehELem, place)
+
+      formSubmitButton.click()
+    }
+
+  </script>
+
+  <script>
+    document.getElementById('locationInput').addEventListener('click', function () {
+      document.getElementById('pickupSelect').focus(); // Фокус на select
+      document.getElementById('pickupSelect').click(); // Імітація кліку на select
+    });
+
+    document.querySelector('.pickup-time-input1').addEventListener('focus', function () {
+      document.querySelector(`.dropdown1`).style.display = 'block';
+    });
+    document.querySelector('.pickup-time-input2').addEventListener('focus', function () {
+      document.querySelector(`.dropdown2`).style.display = 'block';
+    });
+
+    document.querySelectorAll('.time-slot1').forEach(function (slot) {
+      slot.addEventListener('click', function () {
+        // Get the time from the data attribute
+        const selectedTime = slot.getAttribute('data-time');
+        document.getElementById('pickup-time1').value = selectedTime;
+        document.getElementById('pickup-time1').setAttribute("value", `${selectedTime}`);
+        // Highlight the selected time slot
+        document.querySelectorAll('.time-slot1').forEach(function (s) {
+          s.classList.remove('selected');
+        });
+        slot.classList.add('selected');
+        document.querySelector('.dropdown1').style.display = 'none';
+      });
+    });
+    document.querySelectorAll('.time-slot2').forEach(function (slot) {
+      slot.addEventListener('click', function () {
+        // Get the time from the data attribute
+        const selectedTime = slot.getAttribute('data-time');
+        document.getElementById('pickup-time2').value = selectedTime;
+        document.getElementById('pickup-time2').setAttribute("value", `${selectedTime}`);
+        // Highlight the selected time slot
+        document.querySelectorAll('.time-slot2').forEach(function (s) {
+          s.classList.remove('selected');
+        });
+        slot.classList.add('selected');
+        document.querySelector('.dropdown2').style.display = 'none';
+      });
+    });
+    document.addEventListener('click', function (event) {
+      const dropdown1 = document.querySelector('.dropdown1');
+      const dropdown2 = document.querySelector('.dropdown2');
+      const isClickInsideDropdown1 = dropdown1.contains(event.target);
+      const isClickInsideDropdown2 = dropdown2.contains(event.target);
+      const isClickOnInput1 = document.querySelector('.pickup-time-input1').contains(event.target);
+      const isClickOnInput2 = document.querySelector('.pickup-time-input2').contains(event.target);
+
+      if (!isClickInsideDropdown1 && !isClickOnInput1) {
+        dropdown1.style.display = 'none';
+      }
+
+      if (!isClickInsideDropdown2 && !isClickOnInput2) {
+        dropdown2.style.display = 'none';
+      }
+    });
+
+  </script>
+</body>
+
+</html>
